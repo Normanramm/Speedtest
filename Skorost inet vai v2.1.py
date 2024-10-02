@@ -19,4 +19,4 @@ def humansize(nbytes):
 # Readable
 print(f'Скорость загрузки: {humansize(ds)}')
 print(f'Скорость отдачи: {humansize(us)}')
-print(f'Задержка (ping): {humansize(ping)}')
+print(f'Задержка (ping): {ping} м/с')
