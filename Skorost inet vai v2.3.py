@@ -29,6 +29,9 @@ class SpeedTest:
         self.ping_label = tk.Label(self.master, text='Задержка (ping):')
         self.ping_label.grid(row=2, column=0)
 
+        self.ping_label = tk.Label(self.master, text='Нажми и жди!')  # стоит тут поменять местоположение
+        self.ping_label.grid(row=4, column=1)
+
         self.ds_text = tk.Text(self.master, height=1, width=20)
         self.ds_text.grid(row=0, column=1)
 
@@ -69,7 +72,10 @@ class SpeedTest:
         self.ping_text.insert('end', ping)
 
     def run_test(self):
+        self.ping_label.config(text='Идет загрузка...')
+        self.master.update_idletasks()  # Обновите графический интерфейс, чтобы отобразить сообщение о загрузке
         self.print_results()
+        self.ping_label.config(text='Загрузка завершена')
 
 
 root = tk.Tk()
