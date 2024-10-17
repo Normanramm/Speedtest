@@ -28,4 +28,6 @@ class SpeedTest:
 
 
 speed_test = SpeedTest()
+print('Идет загрузка!')
 speed_test.print_results()
+print('Загрузка завершена!')
