@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import speedtest
 
+
 class SpeedTest:
     def __init__(self, master):
         self.st = speedtest.Speedtest()
