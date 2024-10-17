@@ -29,7 +29,7 @@ class SpeedTest:
         self.ping_label = tk.Label(self.master, text='Задержка (ping):')
         self.ping_label.grid(row=2, column=0)
 
-        self.ping_label = tk.Label(self.master, text='Нажми и жди!')  # стоит тут поменять местоположение
+        self.ping_label = tk.Label(self.master, text='Нажми и жди!')  
         self.ping_label.grid(row=4, column=1)
 
         self.ds_text = tk.Text(self.master, height=1, width=20)
